@@ -1,4 +1,4 @@
-Monte Carlo Package:
+# Monte Carlo Package:
 
-Metadata:
+# Metadata:
 Wyatt Scott's Final Project (Monte Carlo Simulator)
