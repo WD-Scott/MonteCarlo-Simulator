@@ -92,25 +92,30 @@ A pandas df with the most recent result from ``play``. This shows the roll and d
 
 ### Analyzer Class:
 #### Attributes:
-- None
+- ``
 #### Methods:
 ##### ``__init__(self, game)``:
 Initializer that takes a game object as its input parameter. At initialization time, it also infers the data type of the die faces used.
 ###### Parameters:
-- game
+- ``game``: Game object.
 ##### ``face_counts_roll(self)``:
 A method that computes how many times a given face is rolled in each event. Stores the results as a dataframe in a public attribute. The dataframe has an index of the roll number and face values as columns (i.e. it is in wide format).
 ###### Parameters:
 - None
+###### Returns:
+A pandas df with the counts of each face value per roll. Includes indexes for the roll number and columns showing die face values.
 ##### ``jackpot(self)``:
 A method that computes how many times the game resulted in all faces being identical. Returns an integer for the number times to the user. Stores the results as a dataframe of jackpot results in a public attribute.
 ###### Parameters:
 - None
+###### Returns:
+A pandas df with the rows for when a jackpot occurred, including the roll and die numbers and the respective face rolled.
 ##### ``combo(self)``:
 A method that computes the distinct combinations of faces rolled and their counts. Combinations are sorted and saved as a multicolumned index. Stores the results as a dataframe in a public attribute.
 ###### Parameters:
 - None
-
+###### Returns:
+A pandas df with combinations where the face values are multi-indexes and columns show the combination occurrence.
 ## Manifest:
 
 ### Files in repo:
