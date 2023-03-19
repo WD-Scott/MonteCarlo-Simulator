@@ -13,9 +13,14 @@ Wyatt Scott's Final Project (Monte Carlo Simulator)
 ``from montecarlo import Die, Game, Analyzer``
 
 ### Creating dice:
-- Object:
-- Change Weight:
-- Roll:
+Create the die object called ``myDie``:
+``myDie = Die(['face1', 'face2', 'face3'])``
+Change the weight of ``'face1'``:
+``myDie.weight_change('face1', 3)``
+Show the faces and weights of ``myDie``:
+``myDie.show_faces_weights()``
+Roll ``myDie`` five times:
+``myDie.rolls(5)``
 
 ### Playing games:
 - Begin Game:
