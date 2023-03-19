@@ -36,7 +36,7 @@ A die class with N sides/faces and W weights that can be rolled to select a side
 - None
 #### Methods:
 ##### ``__init__(self, faces)``:
-Initializer that takes an array or list of faces of any length, initializes weights to 1, then saves to a private dataframe.
+Initializer that takes an array or list of ``faces`` of any length, initializes weights to 1, then saves to a private dataframe.
 ###### Parameters:
 - ``faces``: numpy array or a list
 ##### ``weight_change(self, face, weight_changed)``:
