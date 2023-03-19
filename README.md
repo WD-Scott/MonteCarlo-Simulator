@@ -32,7 +32,7 @@ Roll ``myDie`` five times:
 ### Playing games:
 Create the game object ``myGame``:
 
-``myGame = Game(['myDie1', 'myDie2', 'myDie3'])
+``myGame = Game(['myDie1', 'myDie2', 'myDie3'])``
 
 Play the game using ``myGame``, input value in the ``rolls`` pararmeter to specify number of times each die is to be rolled:
 
