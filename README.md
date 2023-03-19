@@ -52,8 +52,7 @@ A method that rolls the die one or more times but defaults to 1. Returns a list 
 A method that shows the dataframe of faces and weights.
 ###### Parameters:
 - None
-
-
+- 
 ### Game Class:
 A game class that consists of rolling of one or more dice of the same kind one or more times.
 #### Attributes:
@@ -78,7 +77,6 @@ A method that shows the user the results of the most recent play. Takes a parame
 The wide form of the dataframe will be a single column index with:
 - the roll number
 - each die number as a column
-
 
 ### Analyzer Class:
 #### Attributes:
