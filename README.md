@@ -43,10 +43,21 @@ Wyatt Scott's Final Project (Monte Carlo Simulator)
 ``myGame.show()``
 
 ### Analyzing games:
-- Start Analyzer:
-- Face Counts per Roll:
-- Jackpot:
-- Combo:
+- Create the analyzer object ``myAnalyzer`` using ``myGame``:
+
+``myAnalyzer = Analyzer(myGame)``
+
+- Return a df with counts for the occurrence of each face value per roll:
+
+``myAnalyzer.face_counts_roll()``
+
+- Find out how many times a jackpot occurred:
+
+ ``myAnalyzer.jackpot()``
+
+- Find out the combintations of faces rolled and their counts:
+
+``myAnalyzer.combo()``
 
 ### Classes and attributes:
 
