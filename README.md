@@ -51,7 +51,7 @@ A method that rolls the die one or more times but defaults to 1. Returns a list 
 ###### Parameters:
 - ``rolls``: int
 ###### Returns:
-- rolled_outcome: a list of the rolled outcomes.
+- ``rolled_outcome``: a list of the rolled outcomes.
 ##### ``show_faces_weights(self)``:
 A method that shows the dataframe of faces and weights.
 ###### Parameters:
