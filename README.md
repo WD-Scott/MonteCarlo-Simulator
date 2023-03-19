@@ -38,20 +38,26 @@ A die class with N sides/faces and W weights that can be rolled to select a side
 ##### ``__init__(self, faces)``:
 Initializer that takes an array or list of faces of any length, initializes weights to 1, then saves to a private dataframe.
 ###### Parameters:
-- faces
+- ``faces``: numpy array or a list
 ##### ``weight_change(self, face, weight_changed)``:
 A method that changes a side/face weight and checks whether side/face and weight are valid.
 ###### Parameters:
-- face
-- weight_changed
+- ``face``: str or int
+- ``weight_changed``: float
+###### Raises:
+- ``ValueError`` if ``weight_changed`` is not a float or convertible to a float then this error will appear. If face is not included in the die then this error will appear.
 ##### ``rolls(self, rolls=1)``:
 A method that rolls the die one or more times but defaults to 1. Returns a list of outcomes.
 ###### Parameters:
-- rolls
+- ``rolls``: int
+###### Returns:
+- rolled_outcome: a list of the rolled outcomes.
 ##### ``show_faces_weights(self)``:
 A method that shows the dataframe of faces and weights.
 ###### Parameters:
 - None
+###### Returns:
+- a pandas df of faces and weights of the die.
 
 ### Game Class:
 A game class that consists of rolling of one or more dice of the same kind one or more times.
@@ -61,14 +67,14 @@ A game class that consists of rolling of one or more dice of the same kind one o
 ##### ``__init__(self, die_list)``:
 Initializer that takes a single parameter, a list of already instantiated similar Die objects.
 ###### Parameters:
-- die_list
+- ``die_list``: list
 ##### ``play(self, rolls)``:
 A method that takes a parameter to specify how many times the dice should be rolled. Saves the result of the play to a private dataframe of shape N rolls by M dice. Results in a table of data with columns for: 
 - roll number
 - the die number (its list index)
 - the face rolled in that instance
 ###### Parameters:
-- rolls
+- ``rolls``: int
 ##### ``show(self, form = 'wide')``:
 A method that shows the user the results of the most recent play. Takes a parameter to return the dataframe in narrow or wide form. This parameter defaults to wide form. This parameter raises an exception if the user passes an invalid option. The narrow form of the dataframe will have a two column index with:
 - the roll number
@@ -77,6 +83,12 @@ A method that shows the user the results of the most recent play. Takes a parame
 The wide form of the dataframe will be a single column index with:
 - the roll number
 - each die number as a column
+###### Parameters:
+- ``form``: string
+###### Raises:
+- ``ValueError`` if the form is not narrow or wide.
+###### Returns:
+A pandas df with the most recent result from ``play``. This shows the roll and die number as well as the face rolled for each respective roll.
 
 ### Analyzer Class:
 #### Attributes:
