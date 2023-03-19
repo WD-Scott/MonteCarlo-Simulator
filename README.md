@@ -14,12 +14,19 @@ Wyatt Scott's Final Project (Monte Carlo Simulator)
 
 ### Creating dice:
 Create the die object called ``myDie``:
+
 ``myDie = Die(['face1', 'face2', 'face3'])``
+
 Change the weight of ``'face1'``:
+
 ``myDie.weight_change('face1', 3)``
+
 Show the faces and weights of ``myDie``:
+
 ``myDie.show_faces_weights()``
+
 Roll ``myDie`` five times:
+
 ``myDie.rolls(5)``
 
 ### Playing games:
@@ -128,4 +135,4 @@ A pandas df with combinations where the face values are multi-indexes and column
 - montecarlo_test.py
 - montecarlo.py
 - setup.py
-- 
+-
