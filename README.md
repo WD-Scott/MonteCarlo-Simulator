@@ -30,9 +30,17 @@ Roll ``myDie`` five times:
 ``myDie.rolls(5)``
 
 ### Playing games:
-- Begin Game:
-- Play:
-- Show Results:
+Create the game object ``myGame``:
+
+``myGame = Game(['myDie1', 'myDie2', 'myDie3'])
+
+Play the game using ``myGame``, input value in the ``rolls`` pararmeter to specify number of times each die is to be rolled:
+
+``myGame.play(3)``
+
+Show the results of ``play``, input either 'wide' or 'narrow' for the ``form`` parameter to specify the format of the df of results to be shown (defaults to wide).
+
+``myGame.show()``
 
 ### Analyzing games:
 - Start Analyzer:
