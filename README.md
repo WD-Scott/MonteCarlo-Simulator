@@ -8,7 +8,7 @@ Wyatt Scott's Final Project (Monte Carlo Simulator)
 
 ### Installing:
 
-### Importing:
+### Importing: ``from montecarlo import Die, Game, Analyzer``
 
 ### Creating dice:
 
