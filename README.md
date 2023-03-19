@@ -13,32 +13,32 @@ Wyatt Scott's Final Project (Monte Carlo Simulator)
 ``from montecarlo import Die, Game, Analyzer``
 
 ### Creating dice:
-Create the die object called ``myDie``:
+- Create the die object called ``myDie``:
 
 ``myDie = Die(['face1', 'face2', 'face3'])``
 
-Change the weight of ``'face1'``:
+- Change the weight of ``'face1'``:
 
 ``myDie.weight_change('face1', 3)``
 
-Show the faces and weights of ``myDie``:
+- Show the faces and weights of ``myDie``:
 
 ``myDie.show_faces_weights()``
 
-Roll ``myDie`` five times:
+- Roll ``myDie`` five times:
 
 ``myDie.rolls(5)``
 
 ### Playing games:
-Create the game object ``myGame``:
+- Create the game object ``myGame``:
 
 ``myGame = Game(['myDie1', 'myDie2', 'myDie3'])``
 
-Play the game using ``myGame``, input value in the ``rolls`` pararmeter to specify number of times each die is to be rolled:
+- Play the game using ``myGame``, input value in the ``rolls`` pararmeter to specify number of times each die is to be rolled:
 
 ``myGame.play(3)``
 
-Show the results of ``play``, input either 'wide' or 'narrow' for the ``form`` parameter to specify the format of the df of results to be shown (defaults to wide).
+- Show the results of ``play``, input either 'wide' or 'narrow' for the ``form`` parameter to specify the format of the df of results to be shown (defaults to wide).
 
 ``myGame.show()``
 
