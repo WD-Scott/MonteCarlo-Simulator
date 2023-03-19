@@ -5,26 +5,50 @@ Wyatt Scott's Final Project (Monte Carlo Simulator)
 
 
 ## Synopsis:
+...
 
 ### Installing:
 
-### Importing: ``from montecarlo import Die, Game, Analyzer``
+### Importing: 
+``from montecarlo import Die, Game, Analyzer``
 
 ### Creating dice:
+- Object:
+- Change Weight:
+- Roll:
 
 ### Playing games:
+- Begin Game:
+- Play:
+- Show Results:
 
 ### Analyzing games:
-
+- Start Analyzer:
+- Face Counts per Roll:
+- Jackpot:
+- Combo:
 
 ## API Description:
 
 ### Classes and attributes:
 
-### Parameters:
+#### Die Class:
 
-### Return Values:
+##### Attributes:
 
+##### Methods:
+
+#### Game Class:
+
+##### Attributes:
+
+##### Methods:
+
+#### Analyzer Class:
+
+##### Attributes:
+
+##### Methods:
 
 ## Manifest:
 
