@@ -29,8 +29,8 @@ Wyatt Scott's Final Project (Monte Carlo Simulator)
 ## Manifest:
 
 ### Files in repo:
-- montecarlo_demo
-- montecarlo.tests
-- montecarlo
-- setup
--
+- montecarlo_demo.ipynb
+- montecarlo_test.py
+- montecarlo.py
+- setup.py
+- 
