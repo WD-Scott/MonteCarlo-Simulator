@@ -42,8 +42,8 @@ Initializer that takes an array or list of faces of any length, initializes weig
 ##### ``weight_change``:
 A method that changes a side/face weight and checks whether side/face and weight are valid.
 ###### Parameters:
--face
--weight_changed
+- face
+- weight_changed
 ##### ``rolls``:
 A method that rolls the die one or more times but defaults to 1. Returns a list of outcomes.
 ###### Parameters:
