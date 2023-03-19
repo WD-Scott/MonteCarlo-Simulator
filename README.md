@@ -92,7 +92,7 @@ A pandas df with the most recent result from ``play``. This shows the roll and d
 
 ### Analyzer Class:
 #### Attributes:
-- ``
+- None
 #### Methods:
 ##### ``__init__(self, game)``:
 Initializer that takes a game object as its input parameter. At initialization time, it also infers the data type of the die faces used.
