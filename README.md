@@ -96,16 +96,16 @@ A method that computes the distinct combinations of faces rolled and their count
 ###### Returns:
 A pandas df with combinations where the face values are multi-indexes and columns show the combination occurrence.
 
-### Installing:
+## Installing:
 ```python
 !pip install .
 ```
-### Importing: 
+## Importing: 
 ```python
 from montecarlo import Die, Game, Analyzer
 ```
 
-### Creating dice:
+## Creating dice:
 - Create the die object called ``myDie``:
 
 ```python
@@ -130,7 +130,7 @@ myDie.show_faces_weights()
 myDie.rolls(5)
 ```
 
-### Playing games:
+## Playing games:
 - Create the game object ``myGame``:
 
 ```python
@@ -149,7 +149,7 @@ myGame.play(3)
 myGame.show()
 ```
 
-### Analyzing games:
+## Analyzing games:
 - Create the analyzer object ``myAnalyzer`` using ``myGame``:
 
 ```python
