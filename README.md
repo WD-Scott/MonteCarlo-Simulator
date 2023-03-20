@@ -5,7 +5,7 @@ Wyatt Scott's Final Project (Monte Carlo Simulator)
 
 
 ## Synopsis:
-...
+**``Monte Carlo Package``** is a python package with three classes: ``Die``, ``Game``, and ``Analyzer``. Class descriptions and demonstration code are included below to demo how to install and import the package and how to use the three classes.
 
 ## Classes and attributes:
 
