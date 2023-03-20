@@ -7,84 +7,6 @@ Wyatt Scott's Final Project (Monte Carlo Simulator)
 ## Synopsis:
 ...
 
-### Installing:
-```python
-!pip install .
-```
-### Importing: 
-```python
-from montecarlo import Die, Game, Analyzer
-```
-
-### Creating dice:
-- Create the die object called ``myDie``:
-
-```python
-myDie = Die(['face1', 'face2', 'face3'])
-```
-
-- Change the weight of ``'face1'``:
-
-```python
-myDie.weight_change('face1', 3)
-```
-
-- Show the faces and weights of ``myDie``:
-
-```python
-myDie.show_faces_weights()
-```
-
-- Roll ``myDie`` five times:
-
-```python
-myDie.rolls(5)
-```
-
-### Playing games:
-- Create the game object ``myGame``:
-
-```python
-myGame = Game(['myDie1', 'myDie2', 'myDie3'])
-```
-
-- Play the game using ``myGame``, input value in the ``rolls`` pararmeter to specify number of times each die is to be rolled:
-
-```python
-myGame.play(3)
-```
-
-- Show the results of ``play``, input either 'wide' or 'narrow' for the ``form`` parameter to specify the format of the df of results to be shown (defaults to wide).
-
-```python
-myGame.show()
-```
-
-### Analyzing games:
-- Create the analyzer object ``myAnalyzer`` using ``myGame``:
-
-```python
-myAnalyzer = Analyzer(myGame)
-```
-
-- Return a df with counts for the occurrence of each face value per roll:
-
-```python
-myAnalyzer.face_counts_roll()
-```
-
-- Find out how many times a jackpot occurred:
-
- ```python
- myAnalyzer.jackpot()
- ```
-
-- Find out the combintations of faces rolled and their counts:
-
-```python
-myAnalyzer.combo()
-```
-
 ### Classes and attributes:
 
 ### Die Class:
@@ -173,6 +95,85 @@ A method that computes the distinct combinations of faces rolled and their count
 - None
 ###### Returns:
 A pandas df with combinations where the face values are multi-indexes and columns show the combination occurrence.
+
+### Installing:
+```python
+!pip install .
+```
+### Importing: 
+```python
+from montecarlo import Die, Game, Analyzer
+```
+
+### Creating dice:
+- Create the die object called ``myDie``:
+
+```python
+myDie = Die(['face1', 'face2', 'face3'])
+```
+
+- Change the weight of ``'face1'``:
+
+```python
+myDie.weight_change('face1', 3)
+```
+
+- Show the faces and weights of ``myDie``:
+
+```python
+myDie.show_faces_weights()
+```
+
+- Roll ``myDie`` five times:
+
+```python
+myDie.rolls(5)
+```
+
+### Playing games:
+- Create the game object ``myGame``:
+
+```python
+myGame = Game(['myDie1', 'myDie2', 'myDie3'])
+```
+
+- Play the game using ``myGame``, input value in the ``rolls`` pararmeter to specify number of times each die is to be rolled:
+
+```python
+myGame.play(3)
+```
+
+- Show the results of ``play``, input either 'wide' or 'narrow' for the ``form`` parameter to specify the format of the df of results to be shown (defaults to wide).
+
+```python
+myGame.show()
+```
+
+### Analyzing games:
+- Create the analyzer object ``myAnalyzer`` using ``myGame``:
+
+```python
+myAnalyzer = Analyzer(myGame)
+```
+
+- Return a df with counts for the occurrence of each face value per roll:
+
+```python
+myAnalyzer.face_counts_roll()
+```
+
+- Find out how many times a jackpot occurred:
+
+ ```python
+ myAnalyzer.jackpot()
+ ```
+
+- Find out the combintations of faces rolled and their counts:
+
+```python
+myAnalyzer.combo()
+```
+
 ## Manifest:
 
 ### Files in repo:
