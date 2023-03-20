@@ -8,7 +8,9 @@ Wyatt Scott's Final Project (Monte Carlo Simulator)
 ...
 
 ### Installing:
-``!pip install .``
+```python
+!pip install .
+```
 ### Importing: 
 ``from montecarlo import Die, Game, Analyzer``
 
