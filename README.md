@@ -134,7 +134,7 @@ myDie.rolls(5)
 - Create the game object ``myGame``:
 
 ```python
-myGame = Game([Die(['myDie1']), Die(['myDie2']), Die(['myDie3'])])
+myGame = Game([Die([1,2,3]), Die([1,2,3]), Die([1,2,3])])
 ```
 
 - Play the game using ``myGame``, input value in the ``rolls`` pararmeter to specify number of times each die is to be rolled:
