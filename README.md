@@ -7,7 +7,7 @@ Wyatt Scott's Final Project (Monte Carlo Simulator)
 ## Synopsis:
 ...
 
-### Classes and attributes:
+## Classes and attributes:
 
 ### Die Class:
 A die class with N sides/faces and W weights that can be rolled to select a side/face.
