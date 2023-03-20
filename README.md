@@ -12,54 +12,78 @@ Wyatt Scott's Final Project (Monte Carlo Simulator)
 !pip install .
 ```
 ### Importing: 
-``from montecarlo import Die, Game, Analyzer``
+```python
+from montecarlo import Die, Game, Analyzer
+```
 
 ### Creating dice:
 - Create the die object called ``myDie``:
 
-``myDie = Die(['face1', 'face2', 'face3'])``
+```python
+myDie = Die(['face1', 'face2', 'face3'])
+```
 
 - Change the weight of ``'face1'``:
 
-``myDie.weight_change('face1', 3)``
+```python
+myDie.weight_change('face1', 3)
+```
 
 - Show the faces and weights of ``myDie``:
 
-``myDie.show_faces_weights()``
+```python
+myDie.show_faces_weights()
+```
 
 - Roll ``myDie`` five times:
 
-``myDie.rolls(5)``
+```python
+myDie.rolls(5)
+```
 
 ### Playing games:
 - Create the game object ``myGame``:
 
-``myGame = Game(['myDie1', 'myDie2', 'myDie3'])``
+```python
+myGame = Game(['myDie1', 'myDie2', 'myDie3'])
+```
 
 - Play the game using ``myGame``, input value in the ``rolls`` pararmeter to specify number of times each die is to be rolled:
 
-``myGame.play(3)``
+```python
+myGame.play(3)
+```
 
 - Show the results of ``play``, input either 'wide' or 'narrow' for the ``form`` parameter to specify the format of the df of results to be shown (defaults to wide).
 
-``myGame.show()``
+```python
+myGame.show()
+```
 
 ### Analyzing games:
 - Create the analyzer object ``myAnalyzer`` using ``myGame``:
 
-``myAnalyzer = Analyzer(myGame)``
+```python
+myAnalyzer = Analyzer(myGame)
+```
 
 - Return a df with counts for the occurrence of each face value per roll:
 
-``myAnalyzer.face_counts_roll()``
+```python
+myAnalyzer.face_counts_roll()
+```
 
 - Find out how many times a jackpot occurred:
 
- ``myAnalyzer.jackpot()``
+ ```python
+ myAnalyzer.jackpot()
+ ```
 
 - Find out the combintations of faces rolled and their counts:
 
-``myAnalyzer.combo()``
+```python
+myAnalyzer.combo()
+```
 
 ### Classes and attributes:
 
