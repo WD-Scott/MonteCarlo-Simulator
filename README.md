@@ -83,7 +83,7 @@ Initializer that takes a game object as its input parameter. At initialization t
 ###### Parameters:
 - ``game``: Game object.
 ##### ``face_count(self)``:
-A method that computes how many times a given face is rolled in each event. Stores the results as a dataframe in a public attribute. The dataframe has an index of the roll number and face values as columns (i.e., it is in wide format).
+A method that computes how many times a given face is rolled in each event. Stores the results as a dataframe in a public attribute. The dataframe has an index of the roll number and face values as columns (i.e., in wide form).
 ###### Parameters:
 - None
 ###### Returns:
