@@ -67,7 +67,10 @@ The wide form of the dataframe will be a single column index with:
 ###### Raises:
 - ``ValueError`` if ``form`` is not narrow or wide.
 ###### Returns:
-A pandas df with the most recent result from ``play``. This shows the roll and die number as well as the face rolled for each respective roll.
+A pandas df with the most recent result from ``play``, including:
+- the die number 
+- the rolle number
+- the face rolled for each respective roll.
 
 ### Analyzer Class:
 #### Attributes:
