@@ -74,6 +74,7 @@ A pandas df with the most recent result from ``play``, including:
 - the face rolled for each respective roll
 
 ### Analyzer Class:
+An analyzer class that takes the results of a single game and computes various descriptive statistical properties about it. These properties results are available as attributes of an Analyzer object.
 #### Attributes:
 - None
 #### Methods:
