@@ -26,7 +26,7 @@ A method that changes a side/face weight and checks whether side/face and weight
 ###### Raises:
 - ``ValueError`` if ``new_weigh`` is not a float or convertible to a float. This error will also appear if ``face`` is not included in the die.
 ##### ``rolls(self, rolls=1)``:
-A method that rolls the die one or more times but defaults to 1. Returns a list of outcomes.
+A method that rolls the die one or more times but defaults to 1.
 ###### Parameters:
 - ``rolls``: int
 ###### Returns:
