@@ -18,20 +18,20 @@ A die class with N sides/faces and W weights that can be rolled to select a side
 Initializer that takes an array or list of ``faces`` of any length, initializes weights to 1, then saves to a private dataframe.
 ###### Parameters:
 - ``faces``: numpy array or a list
-##### ``weight_change(self, face, weight_changed)``:
+##### ``change_weight(self, face, new_weight)``:
 A method that changes a side/face weight and checks whether side/face and weight are valid.
 ###### Parameters:
 - ``face``: str or int
-- ``weight_changed``: float
+- ``new_weight``: float
 ###### Raises:
-- ``ValueError`` if ``weight_changed`` is not a float or convertible to a float then this error will appear. If ``face`` is not included in the die then this error will appear.
+- ``ValueError`` if ``new_weigh`` is not a float or convertible to a float then this error will appear. If ``face`` is not included in the die then this error will appear.
 ##### ``rolls(self, rolls=1)``:
 A method that rolls the die one or more times but defaults to 1. Returns a list of outcomes.
 ###### Parameters:
 - ``rolls``: int
 ###### Returns:
 - ``rolled_outcome``: a list of the rolled outcomes.
-##### ``show_faces_weights(self)``:
+##### ``show_die(self)``:
 A method that shows the dataframe of faces and weights.
 ###### Parameters:
 - None
@@ -54,7 +54,7 @@ A method that takes a parameter to specify how many times the dice should be rol
 - the face rolled in that instance
 ###### Parameters:
 - ``rolls``: int
-##### ``show(self, form = 'wide')``:
+##### ``show_play(self, form = 'wide')``:
 A method that shows the user the results of the most recent play. Takes a parameter to return the dataframe in narrow or wide form. This parameter defaults to wide form. This parameter raises an exception if the user passes an invalid option. The narrow form of the dataframe will have a two column index with:
 - the roll number
 - the die number
@@ -77,8 +77,8 @@ A pandas df with the most recent result from ``play``. This shows the roll and d
 Initializer that takes a game object as its input parameter. At initialization time, it also infers the data type of the die faces used.
 ###### Parameters:
 - ``game``: Game object.
-##### ``face_counts_roll(self)``:
-A method that computes how many times a given face is rolled in each event. Stores the results as a dataframe in a public attribute. The dataframe has an index of the roll number and face values as columns (i.e. it is in wide format).
+##### ``face_count(self)``:
+A method that computes how many times a given face is rolled in each event. Stores the results as a dataframe in a public attribute. The dataframe has an index of the roll number and face values as columns (i.e., it is in wide format).
 ###### Parameters:
 - None
 ###### Returns:
@@ -115,13 +115,13 @@ myDie = Die(['face1', 'face2', 'face3'])
 - Change the weight of ``'face1'``:
 
 ```python
-myDie.weight_change('face1', 3)
+myDie.change_weight('face1', 3)
 ```
 
 - Show the faces and weights of ``myDie``:
 
 ```python
-myDie.show_faces_weights()
+myDie.show_die()
 ```
 
 - Roll ``myDie`` five times:
@@ -146,7 +146,7 @@ myGame.play(3)
 - Show the results of ``play``, input either 'wide' or 'narrow' for the ``form`` parameter to specify the format of the df of results to be shown (defaults to wide).
 
 ```python
-myGame.show()
+myGame.show_play()
 ```
 
 ## Analyzing games:
@@ -159,7 +159,7 @@ myAnalyzer = Analyzer(myGame)
 - Return a df with counts for the occurrence of each face value per roll:
 
 ```python
-myAnalyzer.face_counts_roll()
+myAnalyzer.face_count()
 ```
 
 - Find out how many times a jackpot occurred:
