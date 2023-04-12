@@ -93,7 +93,10 @@ A method that computes how many times the game resulted in all faces being ident
 ###### Parameters:
 - None
 ###### Returns:
-A pandas df with the rows for when a jackpot occurred, including the roll and die numbers and the respective face rolled.
+A pandas df with the rows for when a jackpot occurred, including:
+- the roll number
+- the die number
+- the respective face rolled
 ##### ``combo(self)``:
 A method that computes the distinct combinations of faces rolled and their counts. Combinations are sorted and saved as a multicolumned index. Stores the results as a dataframe in a public attribute.
 ###### Parameters:
