@@ -44,7 +44,7 @@ A game class that consists of rolling of one or more dice of the same kind one o
 - None
 #### Methods:
 ##### ``__init__(self, die_list)``:
-Initializer that takes a single parameter, a list of already instantiated similar Die objects.
+Initializer that takes a single parameter — a list of already instantiated similar Die objects.
 ###### Parameters:
 - ``die_list``: list
 ##### ``play(self, rolls)``:
