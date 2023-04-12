@@ -59,6 +59,7 @@ A method that shows the user the results of the most recent play. Takes a parame
 - the roll number
 - the die number
 - a column for the face rolled
+
 The wide form of the dataframe will be a single column index with:
 - the roll number
 - each die number as a column
