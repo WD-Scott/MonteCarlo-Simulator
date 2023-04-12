@@ -70,7 +70,7 @@ The wide form of the dataframe will be a single column index with:
 A pandas df with the most recent result from ``play``, including:
 - the die number 
 - the rolle number
-- the face rolled for each respective roll.
+- the face rolled for each respective roll
 
 ### Analyzer Class:
 #### Attributes:
