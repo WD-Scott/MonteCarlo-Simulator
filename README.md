@@ -102,7 +102,7 @@ A method that computes the distinct combinations of faces rolled and their count
 ###### Parameters:
 - None
 ###### Returns:
-A pandas df with combinations where the face values are multi-indexes and columns show the combination occurrence.
+A pandas df with combinations where the face values are multi-indexes and columns show the combination count.
 
 ## Installing:
 ```python
