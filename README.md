@@ -185,8 +185,3 @@ myAnalyzer.combo()
 ## Manifest:
 
 ### Files in repo:
-- montecarlo_demo.ipynb
-- montecarlo_test.py
-- montecarlo.py
-- setup.py
--
