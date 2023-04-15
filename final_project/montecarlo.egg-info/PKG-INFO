@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: Montecarlo-Simulator
+Version: 1.0.0
+Summary: Monte Carlo Module including Die, Game, and Analyzer
+Home-page: 
+Author: Wyatt Scott
+Author-email: bdr6qz@virginia.edu
+License: MIT
