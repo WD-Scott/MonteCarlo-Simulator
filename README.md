@@ -1,7 +1,7 @@
 # Monte Carlo Package:
 
 ## Metadata:
-Wyatt Scott's Final Project (Monte Carlo Simulator)
+Final Project (Monte Carlo Simulator)
 
 
 ## Synopsis:
