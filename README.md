@@ -3,9 +3,12 @@
 ## Metadata:
 Final Project (Monte Carlo Simulator)
 
+- - - -
 
 ## Synopsis:
 The **``Monte Carlo Package``** is a python package with three classes: ``Die``, ``Game``, and ``Analyzer``. Class descriptions and demonstration code are included below to demo how to install and import the package and how to use the three classes.
+
+- - - -
 
 ## Classes and attributes:
 
@@ -37,6 +40,8 @@ A method that shows the dataframe of faces and weights.
 - None
 ###### Returns:
 - a pandas df of faces and weights of the die.
+
+- - - -
 
 ### Game Class:
 A game class that consists of rolling of one or more dice of the same kind one or more times.
@@ -73,6 +78,8 @@ A pandas df with the most recent result from ``play``, including:
 - the rolle number
 - the face rolled for each respective roll
 
+- - - -
+
 ### Analyzer Class:
 An analyzer class that takes the results of a single game and computes various descriptive statistical properties about it. These properties results are available as attributes of an Analyzer object.
 #### Attributes:
@@ -103,6 +110,8 @@ A method that computes the distinct combinations of faces rolled and their count
 - None
 ###### Returns:
 A pandas df with combinations where the face values are multi-indexes and columns show the combination count.
+
+- - - -
 
 ## Installing:
 ```python
@@ -182,10 +191,11 @@ myAnalyzer.face_count()
 myAnalyzer.combo()
 ```
 
+- - - -
+
 ## Manifest:
 
 ### Files in repo:
-
 * final_project
     * montecarlo
         * init.py
