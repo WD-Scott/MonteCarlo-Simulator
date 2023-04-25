@@ -196,8 +196,8 @@ myAnalyzer.combo()
         * init.py
         * montecarlo.py
         * pycache
-            * init.cpython-39.pyc
-            * montecarlo.cpython-39.pyc
+            - init.cpython-39.pyc
+            - montecarlo.cpython-39.pyc
    * montecarlo_demo.ipynb
    * montecarlo_tests.py
    * setup.py
