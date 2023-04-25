@@ -36,7 +36,7 @@ A method that shows the dataframe of faces and weights.
 - None
 ###### Returns:
 - a pandas df of faces and weights of the die.
-- - - -
+____
 ### Game Class:
 A game class that consists of rolling of one or more dice of the same kind one or more times.
 #### Attributes:
