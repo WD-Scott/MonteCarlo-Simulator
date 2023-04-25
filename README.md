@@ -36,7 +36,7 @@ A method that shows the dataframe of faces and weights.
 - None
 ###### Returns:
 - a pandas df of faces and weights of the die.
-____
+
 ### Game Class:
 A game class that consists of rolling of one or more dice of the same kind one or more times.
 #### Attributes:
@@ -71,7 +71,7 @@ A pandas df with the most recent result from ``play``, including:
 - the die number 
 - the rolle number
 - the face rolled for each respective roll
-- - - -
+
 ### Analyzer Class:
 An analyzer class that takes the results of a single game and computes various descriptive statistical properties about it. These properties results are available as attributes of an Analyzer object.
 #### Attributes:
