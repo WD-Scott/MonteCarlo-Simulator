@@ -188,10 +188,10 @@ myAnalyzer.combo()
 
 * final_project
     * montecarlo
-        * __init__.py
+        * init.py
         * montecarlo.py
-        * __pycache__
-          *  __init__.cpython-39.pyc
+        * pycache
+          *  init.cpython-39.pyc
           *  montecarlo.cpython-39.pyc
    * montecarlo_demo.ipynb
    * montecarlo_tests.py
