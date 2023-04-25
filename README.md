@@ -185,11 +185,11 @@ myAnalyzer.combo()
 ## Manifest:
 
 ### Files in repo:
-* final_project:
- * montecarl:
+* final_project
+ * montecarl
   * __init__.py
   * montecarlo.py
-  * __pycache__:
+  * __pycache__
    * __init__.cpython-39.pyc
    * montecarlo.cpython-39.pyc
  * montecarlo_demo.ipynb
