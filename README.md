@@ -4,8 +4,10 @@
 Final Project (Monte Carlo Simulator)
 
 ## Synopsis:
-.is-live-preview hr {
-  border-color: #FFFFFF !important;
+/* HR Horizontal Rule LIVE PREVIEW */
+.markdown-source-view.mod-cm6 hr {
+  border-top: 1px solid;
+  border-color: #499dce;
 }
 The **``Monte Carlo Package``** is a python package with three classes: ``Die``, ``Game``, and ``Analyzer``. Class descriptions and demonstration code are included below to demo how to install and import the package and how to use the three classes.
 
