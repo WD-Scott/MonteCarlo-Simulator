@@ -195,3 +195,5 @@ myAnalyzer.combo()
    * montecarlo_tests.py
    * setup.py
    * test_results.txt
+* LICENSE
+* README.md
