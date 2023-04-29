@@ -75,7 +75,7 @@ An analyzer class that takes the results of a single game and computes various d
 - None
 #### Methods:
 ##### ``__init__(self, game)``:
-Initializer that takes a game object as its input parameter. At initialization time, it also infers the data type of the die faces used.
+Initializer that takes a game object as its input parameter. At initialization time, it also infers the data type of the die faces.
 ###### Parameters:
 - ``game``: Game object.
 ##### ``face_count(self)``:
