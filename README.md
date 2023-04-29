@@ -47,10 +47,7 @@ Initializer that takes a single parameter — a list of already instantiated sim
 ###### Parameters:
 - ``die_list``: list
 ##### ``play(self, rolls)``:
-A method that takes a parameter to specify how many times the dice should be rolled. Saves the result of the play to a private dataframe of shape N rolls by M dice. Results in a table of data with columns for: 
-- roll number
-- the die number (its list index)
-- the face rolled in that instance
+A method that takes a parameter to specify how many times the dice should be rolled.
 ###### Parameters:
 - ``rolls``: int
 ##### ``show_play(self, form = 'wide')``:
