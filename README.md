@@ -51,7 +51,7 @@ A method that takes a parameter to specify how many times the dice should be rol
 ###### Parameters:
 - ``rolls``: int
 ##### ``show_play(self, form = 'wide')``:
-A method that shows the user the results of the most recent play. Takes a parameter to return the dataframe in narrow or wide form. This parameter defaults to wide form. This parameter raises an exception if the user passes an invalid option. The narrow form of the dataframe will have a two column index with:
+A method that shows the user the results of the most recent play. Takes a parameter to return the dataframe in narrow or wide form. This parameter defaults to wide form. This parameter raises an exception if the user passes an invalid option. The narrow form of the dataframe will have a two-column index with:
 - the roll number
 - the die number
 - a column for the face rolled
