@@ -85,7 +85,7 @@ A method that computes how many times a given face is rolled in each event. Stor
 ###### Returns:
 A pandas df with the counts of each face value per roll. Includes indexes for the roll number and columns showing die face values.
 ##### ``jackpot(self)``:
-A method that computes how many times the game resulted in all faces being identical. Returns an integer for the number times to the user. Stores the results as a dataframe of jackpot results in a public attribute.
+A method that computes how many times the game resulted in all faces being identical and returns an integer for the number of times to the user. Stores the results as a dataframe of jackpot results in a public attribute.
 ###### Parameters:
 - None
 ###### Returns:
