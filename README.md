@@ -4,7 +4,7 @@
 Final Project (Monte Carlo Simulator)
 
 ## Synopsis:
-The **``Monte Carlo Package``** is a python package with three classes: ``Die``, ``Game``, and ``Analyzer``. Class descriptions and demonstration code are included below to demo how to install and import the package and how to use the three classes.
+The **``Monte Carlo Package``** is a Python package with three classes: ``Die``, ``Game``, and ``Analyzer``. Class descriptions and demonstration code are included below to demo how to install and import the package and how to use the three classes.
 
 ## Classes and attributes:
 
@@ -16,14 +16,14 @@ A die class with N sides/faces and W weights that can be rolled to select a side
 ##### ``__init__(self, faces)``:
 Initializer that takes an array or list of ``faces`` of any length, initializes weights to 1.
 ###### Parameters:
-- ``faces``: numpy array or a list
+- ``faces``: NumPy array or a list
 ##### ``change_weight(self, face, new_weight)``:
 A method that changes a side/face weight and checks whether side/face and weight are valid.
 ###### Parameters:
 - ``face``: str or int
 - ``new_weight``: float
 ###### Raises:
-- ``ValueError`` if ``new_weight`` is not a float or convertible to a float. This error will also appear if ``face`` is not included in the die.
+- ``ValueError`` if ``new_weight`` is not a float or convertible to a float. This error will also appear if the ``face`` is not included in the die.
 ##### ``rolls(self, rolls=1)``:
 A method that rolls the die one or more times but defaults to 1.
 ###### Parameters:
@@ -35,7 +35,7 @@ A method that shows the dataframe of faces and weights.
 ###### Parameters:
 - None
 ###### Returns:
-- a pandas df of faces and weights of the die.
+- a Pandas df of faces and weights of the die.
 
 ### Game Class:
 A game class that consists of rolling of one or more dice of the same kind one or more times.
@@ -64,9 +64,9 @@ The wide form of the dataframe will be a single-column index with:
 ###### Raises:
 - ``ValueError`` if ``form`` is not narrow or wide.
 ###### Returns:
-A pandas df with the most recent result from ``play``, including:
+A Pandas df with the most recent result from ``play``, including:
 - the die number 
-- the rolle number
+- the roll number
 - the face rolled for each respective roll
 
 ### Analyzer Class:
@@ -83,13 +83,13 @@ A method that computes how many times a given face is rolled in each event. Stor
 ###### Parameters:
 - None
 ###### Returns:
-A pandas df with the counts of each face value per roll. Includes indexes for the roll number and columns showing die face values.
+A Pandas df with the counts of each face value per roll. Includes indexes for the roll number and columns showing die face values.
 ##### ``jackpot(self)``:
 A method that computes how many times the game resulted in all faces being identical and returns an integer for the number of times to the user. Stores the results as a dataframe of jackpot results in a public attribute.
 ###### Parameters:
 - None
 ###### Returns:
-A pandas df with the rows for when a jackpot occurred, including:
+A Pandas df with the rows for when a jackpot occurred, including:
 - the roll number
 - the die number
 - the respective face rolled
@@ -98,7 +98,7 @@ A method that computes the distinct combinations of faces rolled and their count
 ###### Parameters:
 - None
 ###### Returns:
-A pandas df with combinations where the face values are multi-indexes and columns show the combination count.
+A Pandas df with combinations where the face values are multi-indexes and columns show the combination count.
 - - - -
 ## Installing:
 ```python
@@ -141,7 +141,7 @@ myDie.rolls(5)
 myGame = Game([Die([1,2,3]), Die([1,2,3]), Die([1,2,3])])
 ```
 
-- Play the game using ``myGame``, input value in the ``rolls`` pararmeter to specify number of times each die is to be rolled:
+- Play the game using ``myGame``, input value in the ``rolls`` parameter to specify number of times each die is to be rolled:
 
 ```python
 myGame.play(3)
@@ -172,7 +172,7 @@ myAnalyzer.face_count()
  myAnalyzer.jackpot()
  ```
 
-- Find out the combintations of faces rolled and their counts:
+- Find out the combinations of faces rolled and their counts:
 
 ```python
 myAnalyzer.combo()
